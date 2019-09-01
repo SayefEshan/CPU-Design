@@ -1,0 +1,8 @@
+add $t2, $t1, $t0
+sub $t0, $t2, $t1
+xor $t1, $t2, $t0
+beq $t2, $t0, 2
+addi $t2, $t2, 3
+sw $t1, 2($t0)
+lw $t0, 0($t2)
+j 3

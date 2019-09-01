@@ -1,0 +1,16 @@
+addi $t0, $zero, 4
+addi $t1, $zero, 2
+sw $t0, 0($t0)
+lw $s2, 2($t1)
+beq  $s2, $t1, 2
+addi $s1, $s2, 1
+j 9
+addi $s2, $t1, -1
+add $s2, $s1, $s2
+srl s2, $s1, 1
+sll s2, $s1, 1
+addi $t3, $zero, 1
+beq $s2, $s1, 3
+add $t3, $t3, $s1
+addi $s1, $s1, 1
+j 12

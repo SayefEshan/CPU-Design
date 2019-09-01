@@ -1,0 +1,4 @@
+lw $t2, 2($zero)
+lw $t1, 0($zero)
+beq  $t1, $t2, -3
+stall

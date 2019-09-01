@@ -1,0 +1,7 @@
+lw $t1, 0($zero)
+lw $t2, 4($zero)
+lw $s0, 8($zero)
+add $s1, $t1, $t2
+sw $s1, 12($zero)
+add $s2, $t1, $s0
+sw $s2, 16($zero)

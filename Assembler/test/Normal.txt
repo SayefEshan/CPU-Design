@@ -1,0 +1,9 @@
+addi $t1, $zero, 2
+addi $t2, $zero, 2
+add $s2, $t1, $t2
+sw $s2, 4($zero)
+or $s2, $t1, $t2
+sw $s2, 6($zero)
+addi $s2, $s2, 6
+sub $s2, $s2, $t2
+sw $s2, 8($zero)

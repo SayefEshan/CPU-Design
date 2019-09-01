@@ -1,0 +1,13 @@
+lw $t2, 2($zero)
+lw $t1, 0($zero)
+slt $t3, $t1, $t2
+bne $t3, $zero, 1
+sub $s1, $t1, $t2
+add $s1, $t1, $t2
+
+lw $t2, 2($zero)
+lw $t1, 0($zero)
+slt $t3, $t1, $t2
+beq $t3, $zero, 1
+sub $s1, $t1, $t2
+add $s1, $t1, $t2
